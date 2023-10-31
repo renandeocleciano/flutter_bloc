@@ -1,6 +1,8 @@
 import 'package:bloc_app/ui/home/widgets/pokemons_widget.dart';
 import 'package:bloc_app/ui/home/widgets/title_widget.dart';
+import 'package:bloc_app/ui/widgets/category/category_widget.dart';
 import 'package:bloc_app/ui/widgets/container_body.dart';
+import 'package:bloc_app/ui/widgets/items_by_category/items_by_category_widget.dart';
 import 'package:flutter/material.dart';
 
 class HomeLayout extends StatelessWidget {
@@ -19,6 +21,8 @@ class HomeLayout extends StatelessWidget {
           SizedBox(height: 40.0),
           ContainerBody(
             children: [
+              CategoriesWidget(),
+              ItemsByCategoryWidget(),
               PokemonsWidget(title: 'Pokemons'),
             ],
           )
