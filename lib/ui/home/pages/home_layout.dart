@@ -23,7 +23,7 @@ class HomeLayout extends StatelessWidget {
             children: [
               CategoriesWidget(),
               ItemsByCategoryWidget(),
-              PokemonsWidget(title: 'Pokemons'),
+              PokemonsWidget(title: 'Pokemons - APP'),
             ],
           )
         ],
